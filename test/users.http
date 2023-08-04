@@ -1,0 +1,48 @@
+### Add user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "first_name": "",
+  "last_name": "",
+  "username": "",
+  "password": ""
+}
+
+
+### Login user
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "",
+  "password": ""
+}
+
+
+### List users
+GET http://localhost:3000/users
+Authorization: 
+
+
+### Show user
+GET http://localhost:3000/users/:id
+Authorization: 
+
+
+### Edit user
+PATCH http://localhost:3000/users/:id
+Authorization: 
+Content-Type: application/json
+
+{
+  "first_name": "",
+  "last_name": "",
+  "username": "",
+  "password": ""
+}
+
+
+### Show user
+DELETE http://localhost:3000/users/:id
+Authorization: 
